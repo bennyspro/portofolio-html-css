@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 964px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+ 
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: .5rem;
+  }
+ 
+  main {
+    padding: 1rem 3rem;
+  }
+ 
+  main .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+ 
+  main .content .content-description .title {
+    font-size: 3rem;
+  }
+ 
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+ 
+  main .content .content-image {
+    order: -1;
+  }
+}
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 150px;
+}
+
+ header.navbar-container .nav-list ul {
+  padding-right: 0;
+  display: flex;
+  justify-content:left;
+  gap: 2rem 1rem; 
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  padding: .5rem 1.5rem;
+  border-radius: 0px;
+  transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #456d97;
+  color: rgb(168, 159, 159);
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main .content .content-description {
+  flex: 1 1;
+}
+main .content .content-description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+main .content .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+main .content .content-description button {
+  padding: .8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  color: #ffffff;
+  border: 3px solid transparent;
+  border-radius: 0px;
+  background-color: #2D3E50;
+  cursor: pointer;
+  transition: all .15s ease-in;
+}
+
+main .content .content-description button:hover {
+  border: 3px solid #2D3E50;
+  color: #2D3E50;
+  background-color: transparent;
+}
+
+main .content .content-image {
+  flex: 1;
+  display: flex;
+}
+
+main .content .content-image img {
+  margin: auto;
+  min-width: 350px;
+  width: 400px;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .socia_med {
+  height: 100%;
+  display: flex;
+}
+
+main aside .socia_med ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #2D3E50;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .socia_med li {
+  list-style-type: none;
+}
+
+main aside .socia_med li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(247, 190, 190);
+  transition: all .1s ease-in-out;
+}
+main aside .socia_med li a:hover {
+  color: #686d74;
+}
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#team {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+.cards {
+  width: 300px;
+  margin: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+.cards-content {
+padding: 7px 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+h2 {
+  text-align: center;
+  padding: 25px;
+}
+.card-status {
+  color: rgb(14, 12, 12);
+  font-size: 17px;
+}
+.card-text {
+  font-size: 15px;
+}
+.my-contact {
+  text-align: center;
+}
+
+.my-contact button a {
+  background-color:#2D3E50 ;
+  padding: .5rem .5rem;
+  margin-block-start: 1rem;
+  color: #F0F8FF;
+  text-align: center;
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 0px;
+  text-align: center;
+  border: 3px solid transparent;
+}
+
+
+.my-contact .contact-button {
+  background-color: #2D3E50;
+  padding: .5rem .5rem;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 0px;
+  text-align: center;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.my-contact .contact-button:hover {
+  border: 3px solid transparent #2D3E50;
+  color: #2D3E50;
+  background-color: white;
+}
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #A9A9A9;
+  height: auto;
+  width: 100vw;
+  font-family: 'QuickSand', sans-serif;
+  padding-top: 40px;
+  color: #fff;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socmeds{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socmeds li {
+  margin: 0 10px;
+}
+.socmeds a {
+  text-decoration: none;
+  color: white;   
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+.socmeds a:hover i{
+  color: aqua;
+}
+.footer-bottom {
+  background: #A9A9A9;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
